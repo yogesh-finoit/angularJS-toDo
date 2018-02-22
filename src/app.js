@@ -6,7 +6,8 @@ angular.module('todoApp',[
 
 		//@ app config gets setup
 		//@ third party modules get's setup here 
-	
+		
+		$locationProvider.html5Mode(true);
 		$locationProvider.hashPrefix('');
 	})
 	.run(function($rootScope, $state){
