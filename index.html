@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>angular bolierplate code</title>
+	<link href="src/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="src/assets/css/style.css" rel="stylesheet">
+</head>
+<!--<base href="/"></base>-->
+
+<body ng-app="todoApp">
+
+
+
+	<!-- Here views will be injected-->
+	<ui-view></ui-view>
+
+
+	<script type="text/javascript" src="src/vendor/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="src/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="src/vendor/angular/angular.min.js"></script>
+	<script type="text/javascript" src="src/vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="src/vendor/lodash/dist/lodash.min.js"></script>
+	<script type="text/javascript" src="src/vendor/restangular/dist/restangular.min.js"></script>
+
+	<script type="text/javascript" src="src/app.js"></script>
+
+	
+
+	<!-- @ home module-->
+	<script type="text/javascript" src="src/app/home/home-module.js"></script>
+	<script type="text/javascript" src="src/app/home/controllers/toDo-controller.js"></script>
+
+
+	<!-- @ common-->
+	<script type="text/javascript" src="src/common/constants/constant-module.js"></script>
+
+</body>
+
+</html>

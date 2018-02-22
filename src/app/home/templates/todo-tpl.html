@@ -1,0 +1,20 @@
+<div class="todo-container">
+    <form ng-submit="addInList()">
+        <div class="form-group">
+            <input type="text" class="new-todo" autofocus ng-model="todoInput" size="50" placeholder="What needs to be done?">
+        </div>
+    </form>
+    <br>
+    <ul id="todo-list">
+        <li ng-repeat="x in todoList">
+            <div>
+                <label class="todos"><input type="checkbox" ng-model="x.isSelected">{{x.todoText}}</label>
+            </div>
+        </li>
+        <li ng-if="todoList.length==0">no todos!!</li>
+    </ul>
+    <div class="text-left todo-options">
+        <button class="btn btn-default" ng-click="removeToDo()">Completed</button>
+        <button class="btn btn-default" ng-click="selectAllToDo()">select All</button>
+    </div>
+</div>
